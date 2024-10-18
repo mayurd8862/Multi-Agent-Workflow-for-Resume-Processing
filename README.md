@@ -62,6 +62,12 @@ This project involves creating a multi-agent workflow that automates the process
 
 ## 💬 How Human Feedback Loop is working
 
+- Added human feedback functionality to the extractor agent and validation agent.
+- When these two agents give their output, an input function will be activated where we can add our feedback to the system and provide suggestions.
+- If add feedback to the system then it run the respective agent once by passing human feedback and give output.
+- If we do not have feedback to add, we need to press **ENTER**.
+- After pressing **ENTER**, the output will be passed to the next agent.
+
 
 ## 👀 Monitoring with LangSmith
 
