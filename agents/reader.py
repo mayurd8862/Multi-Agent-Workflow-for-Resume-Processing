@@ -25,12 +25,14 @@ def resume_reader_agent(file_path):
 
     documents = loader.load()
 
-    
-    print(f"\n>>>> 1) document read by resume_reader_agent ...... \n\n {documents[0].page_content}\n")
+    # Combine content from all pages/documents
+    full_content = ""
+    for doc in documents:
+        full_content += doc.page_content + "\n"  # Add a newline between pages
+
+    print(f"\n>>>> 1) document read by resume_reader_agent ...... \n\n {full_content}\n")
     print(".......................................................................\n")
 
-
-
-    return documents[0].page_content
+    return full_content
 
 # Add a final newline
