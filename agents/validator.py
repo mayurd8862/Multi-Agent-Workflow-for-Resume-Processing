@@ -5,10 +5,11 @@ and correcting information from resumes.
 
 import os
 from langchain_groq import ChatGroq
-from secret import GROQ_API_KEY
+from dotenv import load_dotenv
 
-# Set the API key environment variable
-os.environ["GROQ_API_KEY"] = GROQ_API_KEY
+load_dotenv()
+
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
 
 # Initialize the language model
 llm = ChatGroq(

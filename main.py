@@ -3,13 +3,18 @@ This module initializes the multi-agent workflow for processing resumes using La
 """
 
 import os
-from secret import LANGCHAIN_API_KEY, GROQ_API_KEY
 from langgraph.graph import Graph, END
 from langchain_groq import ChatGroq
 from agents.reader import resume_reader_agent
 from agents.extracter import extracter_agent
 from agents.validator import validator_agent
 import json 
+from dotenv import load_dotenv
+
+load_dotenv()
+
+GROQ_API_KEY = os.environ.get("GROQ_API_KEY")
+LANGCHAIN_API_KEY = os.environ.get("LANGCHAIN_API_KEY")
 
 def main():
     """
