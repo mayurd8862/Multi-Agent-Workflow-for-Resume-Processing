@@ -77,6 +77,12 @@ The visualization will display the sequence of LLM calls, their relationships, a
 ![image](https://github.com/user-attachments/assets/5d0f3f1f-14bb-41f1-b2f2-45144da2d959)
 
 
+## 📧 Contact 
+For any questions or suggestions, feel free to reach out:
+
+- **Email**: mayur.dabade21@vit.edu
+- **GitHub** : [mayurd8862](https://github.com/mayur8862)
+- **LinkedIn** : [https://www.linkedin.com/in/mayur-dabade-b527a9230](https://www.linkedin.com/in/mayur-dabade-b527a9230)
 
 
 
