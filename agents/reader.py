@@ -25,6 +25,12 @@ def resume_reader_agent(file_path):
 
     documents = loader.load()
 
+    
+    print(f"\n>>>> 1) document read by resume_reader_agent ...... \n\n {documents[0].page_content}\n")
+    print(".......................................................................\n")
+
+
+
     return documents[0].page_content
 
 # Add a final newline

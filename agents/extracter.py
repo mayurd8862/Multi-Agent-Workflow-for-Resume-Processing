@@ -27,7 +27,7 @@ def get_human_feedback(prompt):
         str: The feedback provided by the user.
     """
     # Replace with appropriate feedback mechanism (e.g., Streamlit input in actual implementation)
-    return input("Your feedback: ")
+    return input(f"{prompt}: ")
 
 def extracter_agent(loaded_doc, feedback=""):
     """
@@ -70,9 +70,13 @@ def extracter_agent(loaded_doc, feedback=""):
     response = llm.invoke(prompt)
     extracted_content = response.content
 
-    feedback = get_human_feedback("Entities have been extracted. Any feedback on the extraction?")
+    print(f"\n>>>> 2) Extracted Entities by extracter_agent ...... \n\n {extracted_content}\n")
+
+    feedback = get_human_feedback("FEEDBACK -> Entities have been extracted, any feedback on the extraction?")
+
 
     if feedback:
         return extracter_agent(loaded_doc, feedback=feedback)
-
+    
     return extracted_content
+
