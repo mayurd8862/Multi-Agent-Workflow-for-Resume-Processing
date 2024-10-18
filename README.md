@@ -13,6 +13,18 @@ This project involves creating a multi-agent workflow that automates the process
 - **JSON Output**: Compile validated entities into a predefined JSON format.
 - **Monitoring**: Used LangGraph and LangSmith to monitor and visualize LLM calls within the agents.
 
+
+## 🤖 Tech Stack used:
+- **python**
+- **Groq** - A specialized AI accelerator designed for large language models, offering high performance and efficiency. used "mixtral-8x7b-32768" LLM model through groq.
+- **Langchain** - used for documents loader, llm integration
+- **Langgraph** - Used for creating multi agent workflows
+- **Langsmith** - Monitoring and visualizing LLM calls, tokens, and other LLM parameters
+- **git** - for version control system
+- **pylint** - for ensuring code quality
+  
+
+
 ## 🛠️ Installation
 
 1. **Clone the repository**:
@@ -40,10 +52,12 @@ This project involves creating a multi-agent workflow that automates the process
 
 ## 🏃‍♂️ How to Run the Application
 
- **run the main.py file**:
+ **Add resume file location and run the main.py code**:
    ```sh
    python main.py
    ```
+## 🌊 Multi Agent workflow flowchart
+![image](https://github.com/user-attachments/assets/20bed49c-e01b-419d-afc5-bfbf948d3de5)
 
 ## 👀 Monitoring with LangSmith
 
@@ -56,8 +70,8 @@ Locate the project(s) that you have integrated with LangSmith. You can identify 
 4. **visualize**: In the "Monitoring" section, you should see a visualization of the LLM call flows within that project.
 The visualization will display the sequence of LLM calls, their relationships, and any dependencies between them.
 
-![image](https://github.com/user-attachments/assets/24f85c05-0b9c-4390-abbd-9871403c2708)
 
+![image](https://github.com/user-attachments/assets/5886d878-31c7-426a-8711-9834e12696c0)
 
 ![image](https://github.com/user-attachments/assets/5d0f3f1f-14bb-41f1-b2f2-45144da2d959)
 
