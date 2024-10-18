@@ -94,7 +94,7 @@ def validator_agent(entities, feedback=""):
     
     print("\n>>>>> 3) Extracted data Validated by validator_agent and there are no errors in the output .....\n")
 
-    feedback = get_human_feedback("FEEDBACK -> Entities have been validated, any feedback on the validation?: ")
+    feedback = get_human_feedback("FEEDBACK -> Entities have been validated, any feedback on the validation? If no press 'ENTER': ")
     
     if feedback:
         return validator_agent(entities, feedback=feedback)

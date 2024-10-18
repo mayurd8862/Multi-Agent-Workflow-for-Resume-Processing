@@ -73,7 +73,7 @@ def extracter_agent(loaded_doc, feedback=""):
 
     print(f"\n>>>> 2) Extracted Entities by extracter_agent ...... \n\n {extracted_content}\n")
 
-    feedback = get_human_feedback("FEEDBACK -> Entities have been extracted, any feedback on the extraction?")
+    feedback = get_human_feedback("FEEDBACK -> Entities have been extracted, any feedback on the extraction? If no press 'ENTER': ")
 
 
     if feedback:
