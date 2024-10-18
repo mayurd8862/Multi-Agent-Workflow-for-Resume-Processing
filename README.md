@@ -1,11 +1,10 @@
 # Multi-Agent Workflow for Resume Processing
 
-
-## Project Overview
+## 📝 Project Overview
 
 This project involves creating a multi-agent workflow that automates the processing of multi-page resumes using Large Language Models (LLMs). The system is designed to read resumes, extract key entities, validate them, and incorporate human feedback at each stage to ensure accuracy and completeness. The final output is a JSON file containing all validated entities.
 
-## Objectives
+## 🎯 Objectives
 
 - **Resume Reading**: Process multi-page resumes in various formats (e.g., PDF, DOCX).
 - **Entity Extraction**: Extract key entities such as personal information, education, work experience, and skills.
@@ -14,14 +13,7 @@ This project involves creating a multi-agent workflow that automates the process
 - **JSON Output**: Compile validated entities into a predefined JSON format.
 - **Monitoring**: Used LangGraph and LangSmith to monitor and visualize LLM calls within the agents.
 
-## Setup and Installation
-
-### Prerequisites
-
-- Python 3.x
-- pip (Python package installer)
-
-### Installation
+## 🛠️ Installation
 
 1. **Clone the repository**:
    ```sh
@@ -46,13 +38,28 @@ This project involves creating a multi-agent workflow that automates the process
    GROQ_API_KEY = your_groq_api_key
    ```
 
+## 🏃‍♂️ How to Run the Application
+
+ **run the main.py file**:
+   ```sh
+   python main.py
+   ```
+
+## 👀 Monitoring with LangSmith
+
+LangSmith is a powerful platform designed to provide comprehensive visibility and control over your Large Language Model (LLM) calls within your agents.
+
+1. **Login to LangSmith**: Visit the LangSmith website and enter your credentials to log in to your account.
+2. **Go to Projects**: Once logged in, navigate to the "Projects" section of the LangSmith dashboard.
+Locate the project(s) that you have integrated with LangSmith. You can identify them by their names or descriptions.
+3. **Monitor LLM Call Flows**: Click on a specific project to view its details. Go to the Runs section and analyse llm calls and outputs
+4. **visualize**: In the "Monitoring" section, you should see a visualization of the LLM call flows within that project.
+The visualization will display the sequence of LLM calls, their relationships, and any dependencies between them.
+
+![image](https://github.com/user-attachments/assets/24f85c05-0b9c-4390-abbd-9871403c2708)
 
 
-
-
-
-
-
+![image](https://github.com/user-attachments/assets/5d0f3f1f-14bb-41f1-b2f2-45144da2d959)
 
 
 
