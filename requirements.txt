@@ -1,6 +1,6 @@
 langchain
 langchain_community
 langchain_groq
-PyPDFLoader
+PyPDF2
 Docx2txtLoader
 langgraph
