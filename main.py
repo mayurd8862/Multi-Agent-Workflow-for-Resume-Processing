@@ -54,8 +54,14 @@ def main():
     # Invoke the workflow with the resume file
     result = app.invoke("resume.pdf")
 
+    json_result = llm.invoke(f"take this output of resume file and provide this content in json format. dont add any extra line. I just need content in json format. resume content: {result}")
+
+    # print(json_result.content)
+
     with open("parsed_resume.json", "w") as json_file:
-        json.dump(result, json_file, indent=4)
+        json.dump(json_result.content, json_file, indent=4)
+
+    print("\n>>> 4) ✅ JSON file saved successfuly....\n")
 
 
 if __name__ == "__main__":

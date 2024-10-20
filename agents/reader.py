@@ -30,7 +30,7 @@ def resume_reader_agent(file_path):
     for doc in documents:
         full_content += doc.page_content + "\n"  # Add a newline between pages
 
-    print(f"\n>>>> 1) document read by resume_reader_agent ...... \n\n {full_content}\n")
+    print(f"\n>>>> 1) ✅ document read by resume_reader_agent ...... \n\n {full_content}\n")
     print(".......................................................................\n")
 
     return full_content
